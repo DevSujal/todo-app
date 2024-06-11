@@ -20,8 +20,9 @@ function App() {
 
   const addTodo = (todo) => {
 
-    if(isExists(todo)) return
-
+    
+    if(isExists(todo).length > 0) return
+    
 
     setTodos((prev) => [
       
